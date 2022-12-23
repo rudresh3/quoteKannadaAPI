@@ -1,6 +1,6 @@
 const express = require('express')
 const app = express()
-const port = process.env.PORT || 3000;
+const PORT = process.env.PORT || 3000;
 const mongoose = require('mongoose');
 require('dotenv/config');
 const bodyparser = require('body-parser');
@@ -36,6 +36,6 @@ const db = mongoose.connection
 db.on('error', (error) => console.error(error))
 db.once('open', ()=> console.log('Connected to Database'))
 
-app.listen(port, () => {
+app.listen(PORT, () => {
   console.log(`app listening on port ${port}`)
 })
