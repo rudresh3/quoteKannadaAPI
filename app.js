@@ -21,8 +21,8 @@ app.use(bodyparser.json());
 //Import Routes
 const postsRoute = require('./routes/posts');
 
-// app.use('/api/v1/quotes', postsRoute);
-app.use('/', postsRoute);
+app.use('/api/v1/quotes', postsRoute);
+// app.use('/', postsRoute);
 
 //Routes
 app.get('/', (req, res) => {

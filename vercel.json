@@ -7,8 +7,9 @@
     ],
     "routes": [
       {
-        "src": "/(.*)",
-        "dest": "app.js"
+        "src": "/api/v1/quotes",
+        "dest": "/app.js",
+        "methods": ["USE"]
       }
     ]
   }
