@@ -1,14 +1,14 @@
 {
     "builds": [
       {
-        "src": "app.js",
+        "src": "./app.js",
         "use": "@vercel/node"
       }
     ],
     "routes": [
       {
         "src": "/api/v1/quotes",
-        "dest": "/app.js",
+        "dest": "./app.js",
         "methods": ["USE"]
       }
     ]
