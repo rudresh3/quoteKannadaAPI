@@ -25,9 +25,9 @@ app.use('/api/v1/quotes', postsRoute);
 // app.use('/', postsRoute);
 
 //Routes
-app.get('/', (req, res) => {
-  res.send('Hello World')
-})
+// app.get('/', (req, res) => {
+//   res.send('Hello World')
+// })
 
 
 //connect to DB
@@ -37,5 +37,5 @@ db.on('error', (error) => console.error(error))
 db.once('open', ()=> console.log('Connected to Database'))
 
 app.listen(PORT, () => {
-  console.log(`app listening on port ${port}`)
+  console.log(`app listening on port ${PORT}`)
 })
